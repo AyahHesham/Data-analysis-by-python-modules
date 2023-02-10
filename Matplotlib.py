@@ -258,7 +258,12 @@ plt.fill_between(y,a)
 # In[ ]:
 
 
-
+from mpl_toolkits import mplot3d
+ax=plt.axes(projection='3d')
+z=np.linspace(0,15,100)
+x=np.sin(z)
+y=np.cos(z)
+ax.plot3D(x,y,z)
 
 
 # In[ ]:
